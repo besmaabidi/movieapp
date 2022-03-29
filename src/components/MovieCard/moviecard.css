@@ -1,0 +1,27 @@
+.buttons {
+  display: flex;
+
+  justify-content: space-around;
+  padding-block-start: 50px;
+  margin-top: 20px;
+}
+
+.mycard {
+  margin-top: 40px;
+}
+
+.card {
+  height: 450px;
+  position: relative;
+  transition: transform 0.9s;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+}
+
+.overlay {
+  position: absolute;
+  background-color: black;
+}

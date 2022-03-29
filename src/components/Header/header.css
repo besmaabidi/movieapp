@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    position:static;
+    background: rgba(0, 0, 0, 0.8);
+   
+    /* background-image: url("https://cdn.futura-sciences.com/buildsv6/images/wide1920/5/4/1/541e568ae1_108094_streaming-def.jpg"); */
+    /* -webkit-backdrop-filter: brightness(10px); */
+  }
+  
+  .filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1{
+    font: 50px Georgia;
+    font-style: oblique;
+   text-decoration:dotted;
+   color: rgb(152, 137, 221);
+font-size: 60px;
+padding-bottom: 35px;
+  }
