@@ -8,9 +8,10 @@ import Typography from "@mui/material/Typography";
 import Stars from "../Stars/Stars";
 // import MovieForm from "../MovieForm/MovieForm";
 import "./moviecard.css";
+import { Link } from "react-router-dom";
 
 
-const MovieCard = ({ movie: { title, image, rate, year } }) => {
+const MovieCard = ({ movie: { title, image, rate, year,id } }) => {
     return (
       <Card sx={{ maxWidth: 345 }} className="mycard">
         <CardMedia
@@ -37,7 +38,9 @@ const MovieCard = ({ movie: { title, image, rate, year } }) => {
         <CardActions className="buttons">
           <div >
             <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
+            <Link to={`/moviedetails/${id}`}>
+            <Button size="small">Show More</Button>
+            </Link>
           </div>
   
           {/* <MovieForm isEdit={true} /> */}
